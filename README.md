@@ -44,3 +44,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Setting React App
+
+### Create React App with TypeScript
+
+```bash
+$ npx create-react-app react-admin-ui --template typescript
+$ cd react-admin-ui
+~/react-admin-ui $ yarn start
+```
