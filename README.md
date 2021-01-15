@@ -85,8 +85,16 @@ $ cd react-admin-ui
   ~/react-admin-ui $ yarn prettier --write .
   ```
 
+- Material-UI
+
+  ```bash
+  ~/react-admin-ui $ yarn add @material-ui/core @material-ui/icons @fontsource/roboto
+  ```
+
 ## 북마크
 
 [Adding TypeScript | Create React App](https://create-react-app.dev/docs/adding-typescript/)
 [Install · Prettier](https://prettier.io/docs/en/install.html)
 [Install Storybook](https://storybook.js.org/docs/react/get-started/install)
+[Installation - Material-UI](https://material-ui.com/getting-started/installation/)
+[fontsource-roboto](https://www.npmjs.com/package/fontsource-roboto)
