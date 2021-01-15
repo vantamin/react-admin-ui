@@ -54,3 +54,15 @@ $ npx create-react-app react-admin-ui --template typescript
 $ cd react-admin-ui
 ~/react-admin-ui $ yarn start
 ```
+
+### Git 저장소 만들기
+
+```bash
+~/react-admin-ui $ git init
+~/react-admin-ui $ git add --all
+~/react-admin-ui $ git config --local user.name "vantamin"
+~/react-admin-ui $ git config --local user.email "vantablack.min@gmail.com"
+~/react-admin-ui $ git commit -m "Initial commit"
+~/react-admin-ui $ git remote add origin <url>
+~/react-admin-ui $ git push -u origin master
+```
