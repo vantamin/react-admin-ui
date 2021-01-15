@@ -66,3 +66,18 @@ $ cd react-admin-ui
 ~/react-admin-ui $ git remote add origin <url>
 ~/react-admin-ui $ git push -u origin master
 ```
+
+### Packages
+
+- Prettier
+
+  ```bash
+  ~/react-admin-ui $ yarn add --dev --exact prettier
+  ~/react-admin-ui $ echo {}> .prettierrc
+  ~/react-admin-ui $ yarn prettier --write .
+  ```
+
+## 북마크
+
+[Adding TypeScript | Create React App](https://create-react-app.dev/docs/adding-typescript/)
+[Install · Prettier](https://prettier.io/docs/en/install.html)
