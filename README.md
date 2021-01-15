@@ -77,7 +77,16 @@ $ cd react-admin-ui
   ~/react-admin-ui $ yarn prettier --write .
   ```
 
+- Storybook
+
+  ```bash
+  ~/react-admin-ui $ npx sb init
+  ~/react-admin-ui $ yarn storybook
+  ~/react-admin-ui $ yarn prettier --write .
+  ```
+
 ## 북마크
 
 [Adding TypeScript | Create React App](https://create-react-app.dev/docs/adding-typescript/)
 [Install · Prettier](https://prettier.io/docs/en/install.html)
+[Install Storybook](https://storybook.js.org/docs/react/get-started/install)
