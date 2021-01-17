@@ -63,7 +63,7 @@ $ cd react-admin-ui
 ~/react-admin-ui $ git config --local user.name "vantamin"
 ~/react-admin-ui $ git config --local user.email "vantablack.min@gmail.com"
 ~/react-admin-ui $ git commit -m "Initial commit"
-~/react-admin-ui $ git remote add origin <url>
+~/react-admin-ui $ git remote add origin https://github.com/vantamin/react-admin-ui.git
 ~/react-admin-ui $ git push -u origin master
 ```
 
@@ -93,8 +93,8 @@ $ cd react-admin-ui
 
 ## 북마크
 
-[Adding TypeScript | Create React App](https://create-react-app.dev/docs/adding-typescript/)
-[Install · Prettier](https://prettier.io/docs/en/install.html)
-[Install Storybook](https://storybook.js.org/docs/react/get-started/install)
-[Installation - Material-UI](https://material-ui.com/getting-started/installation/)
-[fontsource-roboto](https://www.npmjs.com/package/fontsource-roboto)
+- [Adding TypeScript | Create React App](https://create-react-app.dev/docs/adding-typescript/)
+- [Install · Prettier](https://prettier.io/docs/en/install.html)
+- [Install Storybook](https://storybook.js.org/docs/react/get-started/install)
+- [Installation - Material-UI](https://material-ui.com/getting-started/installation/)
+- [fontsource-roboto](https://www.npmjs.com/package/fontsource-roboto)
