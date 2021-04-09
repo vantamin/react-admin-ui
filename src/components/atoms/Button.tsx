@@ -1,18 +1,6 @@
-import React from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-import { Button as MuiButton } from '@material-ui/core';
-import theme from 'styles/theme';
+import { Theme, withStyles } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
 
-export interface ButtonProps {
-  children: React.ReactNode;
-}
+const styles = (theme: Theme) => ({});
 
-const Button = ({ children }: ButtonProps) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <MuiButton>{children}</MuiButton>
-    </ThemeProvider>
-  );
-};
-
-export default Button;
+export default withStyles(styles)(Button);
