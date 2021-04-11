@@ -1,6 +1,27 @@
-import { Theme, withStyles } from '@material-ui/core/styles';
+import React from 'react';
+import clsx from 'clsx';
+import { Theme, withStyles, WithStyles } from '@material-ui/core/styles';
 import { Paper } from '@material-ui/core';
 
-const styles = (theme: Theme) => ({});
+interface Props extends WithStyles<typeof styles> {
+  children?: React.ReactNode;
+  className?: string;
+}
 
-export default withStyles(styles)(Paper);
+const styles = (theme: Theme) => ({ root: {} });
+
+const Card = (props: Props) => {
+  const { children, classes, className, ...other } = props;
+
+  return (
+    <Paper
+      className={clsx(classes.root, className)}
+      variant="outlined"
+      {...other}
+    >
+      {children}
+    </Paper>
+  );
+};
+
+export default withStyles(styles)(Card);
