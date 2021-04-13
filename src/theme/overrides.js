@@ -6,6 +6,7 @@ const overrides = (theme) => {
   const border = '1px solid transparent';
 
   return {
+    MuiAppBar: { root: { zIndex: theme.zIndex.drawer + 1 } },
     MuiButton: {
       root: {
         padding,
