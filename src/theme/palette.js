@@ -1,7 +1,8 @@
 import { grey } from '@material-ui/core/colors';
 
 const palette = {
-  primary: { main: '#324148', contrastText: '#ffffffe6' },
+  primary: { main: '#37474f' },
+  slate: { main: '#324148' },
   text: { primary: '#333', secondary: '#999', disabled: '#999', hint: '#999' },
   divider: '#ddd',
   background: {
