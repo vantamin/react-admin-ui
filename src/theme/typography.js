@@ -4,7 +4,7 @@ const fontSize = pxToRem(13);
 
 const typography = {
   pxToRem,
-  fontSize,
+  fontSize: 13,
   h1: { fontSize: pxToRem(16) },
   body1: { fontSize },
   body2: { fontSize },
