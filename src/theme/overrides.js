@@ -20,7 +20,31 @@ const overrides = (theme) => {
         color: undefined,
         borderColor: theme.palette.divider,
         backgroundColor: theme.palette.grey[50],
-        '&:hover': { backgroundColor: theme.palette.grey[100] },
+        '&:hover': {
+          backgroundColor: theme.palette.grey[100],
+        },
+        '&:active': { boxShadow: undefined },
+      },
+      containedPrimary: {
+        borderColor: 'transparent',
+        '&:hover': {
+          boxShadow: theme.shadows[1],
+          backgroundColor: theme.palette.primary.main,
+        },
+      },
+      containedSecondary: {
+        borderColor: 'transparent',
+        '&:hover': {
+          boxShadow: theme.shadows[1],
+          backgroundColor: theme.palette.secondary.main,
+        },
+      },
+      disabled: {
+        borderColor: theme.palette.divider,
+      },
+      colorInherit: {
+        color: undefined,
+        borderColor: undefined,
       },
     },
   };

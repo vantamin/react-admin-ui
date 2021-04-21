@@ -1,6 +1,11 @@
 const props = {
   MuiAppBar: { elevation: 1 },
-  MuiButton: { disableRipple: true, variant: 'contained' },
+  MuiButton: {
+    disableElevation: true,
+    disableRipple: true,
+    type: 'button',
+    variant: 'contained',
+  },
   MuiToolbar: { disableGutters: true },
 };
 

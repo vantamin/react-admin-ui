@@ -1,6 +1,39 @@
-import { Theme, withStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
+import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
+import {
+  Button as MuiButton,
+  ButtonProps as MuiButtonProps,
+} from '@material-ui/core';
 
-const styles = (theme: Theme) => ({});
+export interface ButtonProps
+  extends Omit<
+    MuiButtonProps,
+    | 'disableElevation'
+    | 'disableFocusRipple'
+    | 'href'
+    | 'size'
+    | 'variant'
+    | 'action'
+    | 'centerRipple'
+    | 'disableRipple'
+    | 'disableTouchRipple'
+    | 'focusRipple'
+    | 'focusVisibleClassName'
+    | 'onFocusVisible'
+    | 'TouchRippleProps'
+  > {
+  color?: 'primary' | 'secondary';
+}
 
-export default withStyles(styles)(Button);
+const useStyles = makeStyles<Theme>((theme) => createStyles({ root: {} }));
+
+const Button = ({ children, ...other }: ButtonProps) => {
+  const classes = useStyles();
+
+  return (
+    <MuiButton classes={{ root: classes.root }} {...other}>
+      {children}
+    </MuiButton>
+  );
+};
+
+export default Button;
