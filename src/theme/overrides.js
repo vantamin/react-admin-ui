@@ -47,6 +47,26 @@ const overrides = (theme) => {
         borderColor: undefined,
       },
     },
+    MuiCardContent: {
+      root: {
+        padding: theme.spacing(1),
+        '&:last-child': undefined,
+      },
+    },
+    MuiCardHeader: {
+      root: {
+        padding: theme.spacing(1),
+        borderBottom: `1px solid ${theme.palette.divider}`,
+      },
+      avatar: {
+        marginRight: theme.spacing(1),
+      },
+      action: {
+        alignSelf: 'center',
+        marginTop: undefined,
+        marginRight: undefined,
+      },
+    },
   };
 };
 
