@@ -7,13 +7,11 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({ root: { boxShadow: theme.shadows[2] } })
 );
 
-const Card = ({ children, ...other }: CardProps) => {
+const Card = ({ ...other }: CardProps) => {
   const classes = useStyles();
 
   return (
-    <Paper classes={{ root: classes.root }} variant="outlined" {...other}>
-      {children}
-    </Paper>
+    <Paper classes={{ root: classes.root }} variant="outlined" {...other} />
   );
 };
 

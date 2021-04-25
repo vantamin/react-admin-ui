@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Button = ({ children, className, color, ...other }: ButtonProps) => {
+const Button = ({ className, color, ...other }: ButtonProps) => {
   const classes = useStyles();
   const colorName = color ? classes[color] : undefined;
 
@@ -75,9 +75,7 @@ const Button = ({ children, className, color, ...other }: ButtonProps) => {
       className={clsx(className, colorName)}
       color={useColors(color)}
       {...other}
-    >
-      {children}
-    </MuiButton>
+    />
   );
 };
 
