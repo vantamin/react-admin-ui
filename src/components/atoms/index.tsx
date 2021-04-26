@@ -9,3 +9,6 @@ export * from './CardContent';
 
 export { default as CardHeader } from './CardHeader';
 export * from './CardHeader';
+
+export { default as IconButton } from './IconButton';
+export * from './IconButton';

@@ -12,6 +12,7 @@ const palette = {
     default: grey[100],
   },
   action: {
+    active: '#333',
     disabled: '#999',
     disabledBackground: grey[50],
     disabledOpacity: 1,

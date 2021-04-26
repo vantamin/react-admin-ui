@@ -67,6 +67,12 @@ const overrides = (theme) => {
         marginRight: undefined,
       },
     },
+    MuiIconButton: {
+      root: {
+        padding: 5.5,
+        '&:hover': { backgroundColor: theme.palette.grey[100] },
+      },
+    },
   };
 };
 

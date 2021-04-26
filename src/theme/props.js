@@ -9,6 +9,7 @@ const props = {
   MuiCardHeader: {
     titleTypographyProps: { component: 'strong', variant: 'h6' },
   },
+  MuiIconButton: { disableRipple: true },
   MuiToolbar: { disableGutters: true },
 };
 
