@@ -57,9 +57,10 @@ const overrides = (theme) => {
       root: {
         padding: theme.spacing(1),
         borderBottom: `1px solid ${theme.palette.divider}`,
+        '&:last-child': { borderBottom: 0 },
       },
       avatar: {
-        marginRight: theme.spacing(1),
+        marginRight: theme.spacing(0.5),
       },
       action: {
         alignSelf: 'center',
