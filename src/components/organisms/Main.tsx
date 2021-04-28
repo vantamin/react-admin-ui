@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import clsx from 'clsx';
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 
@@ -17,9 +17,13 @@ const useStyles = makeStyles((theme: Theme) =>
 const Main = ({ children, className }: Props) => {
   const classes = useStyles();
 
+  if (Children.count(children) > 1) {
+    return <main className={clsx(classes.root, className)}>{children}</main>;
+  }
+
   return (
     <main className={clsx(classes.root, className)}>
-      <div className={classes.content}>{children}</div>
+      <article className={classes.content}>{children}</article>
     </main>
   );
 };
